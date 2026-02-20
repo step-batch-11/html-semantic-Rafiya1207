@@ -2,14 +2,30 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
 }
 
 hgroup {
   padding: 20px 10px;
   width: 100vw;
   height: 400px;
+  background-color: black;
+  color: white;
+}
+
+hgroup,
+nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +52,10 @@ nav ul {
 
 a {
   text-decoration: none;
+  color: #0095fd;
+}
+
+nav ul a {
   color: black;
 }
 
@@ -52,7 +72,6 @@ mark {
 
 article>header p,
 article>header time {
-  font-weight: 100;
   font-size: 16px;
 }
 
@@ -77,5 +96,74 @@ section mark {
 }
 
 mark {
-  background-color: #face00;
+  background-color: #8adb1a7e;
+}
+
+section p>data {
+  font-weight: 500;
+}
+
+article section {
+  border-bottom: 1px solid #ccc;
+}
+
+figure {
+  margin: 0;
+}
+
+section {
+  position: relative;
+}
+
+aside {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  padding: 0;
+  border-left: 2px solid #ccc;
+  height: max-content;
+  padding: 10px 10px 0 10px;
+}
+
+aside h4 {
+  margin: 0 0px 10px;
+}
+
+
+details {
+  border-radius: 5px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: fit-content;
+  /* max-width: 100px; */
+  padding-bottom: 10px;
+}
+
+summary {
+  margin: 10px 0;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 10px;
+  border-radius: 5px;
+}
+
+body>footer {
+  background-color: #000;
+  color: white;
+  padding-left: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+dialog {
+  position: fixed;
+  bottom: 0px;
+  margin: 0px;
+  background-color: #ececec;
+  border: none;
+  border-radius: 5px;
 }
