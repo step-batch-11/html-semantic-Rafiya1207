@@ -1,10 +1,10 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
 }
 
 ul {
   padding: 0;
-  margin: 0;
 }
 
 li {
@@ -13,16 +13,8 @@ li {
 
 body {
   overflow-x: hidden;
-  margin: 0;
 }
 
-hgroup {
-  padding: 20px 10px;
-  width: 100vw;
-  height: 400px;
-  background-color: black;
-  color: white;
-}
 
 hgroup,
 nav {
@@ -30,6 +22,14 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+hgroup {
+  padding: 1.5em 1em;
+  width: 100vw;
+  height: 200px;
+  background-color: black;
+  color: white;
 }
 
 nav {
@@ -61,22 +61,29 @@ nav ul a {
 
 main {
   width: 60%;
-  margin: auto;
+  margin: 20px auto;
+  padding: 1em 0;
+  border-bottom: 5px solid #ccc;
 }
 
 p,
 mark {
   font-weight: 300;
-  margin: 0;
 }
 
 article>header p,
 article>header time {
   font-size: 16px;
+  color: #555;
+}
+
+article>header {
+  margin-bottom: 30px;
 }
 
 h1 {
   font-size: 46px;
+  margin: 15px 0;
 }
 
 h2 {
@@ -105,24 +112,17 @@ section p>data {
 
 article section {
   border-bottom: 1px solid #ccc;
-}
-
-figure {
-  margin: 0;
-}
-
-section {
   position: relative;
+  margin: 10px 0;
 }
 
 aside {
   position: absolute;
   right: 0px;
   top: 35px;
-  padding: 0;
   border-left: 2px solid #ccc;
   height: max-content;
-  padding: 10px 10px 0 10px;
+  padding: 1em 1em 0 1em;
 }
 
 aside h4 {
@@ -135,35 +135,29 @@ details {
   margin: 10px 0;
   min-width: 300px;
   max-width: fit-content;
-  /* max-width: 100px; */
-  padding-bottom: 10px;
+  padding-bottom: 1em;
 }
 
 summary {
   margin: 10px 0;
   background-color: #000;
   color: #fff;
-  padding: 12px 10px;
+  padding: 1.1em 1em;
   border-radius: 5px;
 }
 
 body>footer {
-  background-color: #000;
-  color: white;
-  padding-left: 300px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 10px;
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  padding: 1em 0;
 }
-
 
 dialog {
   position: fixed;
   bottom: 0px;
-  margin: 0px;
   background-color: #ececec;
   border: none;
   border-radius: 5px;
+  width: 140px;
 }
